@@ -8,7 +8,16 @@ class AuthManager {
   }
 
   getIsLoggedIn() {
-    return !!this.getIsLoggedIn;
+    return !!this.isLoggedIn;
+  }
+
+  setLogin(email) {
+    this.isLoggedIn = email;
+    this.persist();
+  }
+
+  persist () {
+    Cookies.set(IS_LOGGED_IN_KEY, this.isLoggedIn);
   }
 };
 

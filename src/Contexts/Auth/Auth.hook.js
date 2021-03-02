@@ -5,14 +5,20 @@ import AuthManager from "../../Services/AuthManager";
 const useAuth = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(() => {
-    const login = AuthManager.getIsLoggedIn();
+  const login = (email) => {
+    AuthManager.setLogin(email);
+    setIsLoggedIn(AuthManager.getIsLoggedIn());
+  }
 
-    setIsLoggedIn(login);
+  useEffect(() => {
+    const isLogin = AuthManager.getIsLoggedIn();
+
+    setIsLoggedIn(isLogin);
   }, []);
 
   return {
-    isLoggedIn
+    isLoggedIn,
+    login
   };
 };
 

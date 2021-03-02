@@ -1,0 +1,7 @@
+.ant-col .ant-form-item-control {
+  width: 100%;
+}
+
+.ant-btn-primary, .ant-btn-primary:hover, .ant-btn-primary:focus {
+  border-color: transparent;
+}

@@ -20,7 +20,8 @@ const menu = {
   display: 'flex',
   width: '100vw',
   overflowY: 'scroll',
-  padding: `0 ${padding}px`
+  padding: `0 ${padding}px`,
+  backgroundColor: 'transparent'
 };
 
 const styles = {

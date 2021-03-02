@@ -25,7 +25,6 @@ const DashboardComponent = () => {
 
   return (
     <div>
-      <Header />
       <Navbar selectedMenu={selectedMenu} setSelectedMenu={setSelectedMenu} />
       <div style={{ padding: `0 ${padding}px`,paddingTop: 10, display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', height: dimens.window.height - 110, overflowY: 'scroll' }}>
         { x.map((el, i) => (

@@ -1,6 +1,6 @@
 const routePaths = {
   DASHBOARD: '/',
-  LOGIN: '/LOGIN'
+  LOGIN: '/login'
 };
 
 export default routePaths;

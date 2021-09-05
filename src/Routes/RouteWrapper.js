@@ -5,9 +5,7 @@ import { AppLayout } from '../Components';
 
 const RouteWrapper = ({ component: Component, ...props }) => (
   <AuthenticatedRoutes {...props}>
-    <AppLayout>
-      <Component />
-    </AppLayout>
+    {AppLayout(Component)}
   </AuthenticatedRoutes>
 );
 

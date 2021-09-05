@@ -2,9 +2,9 @@ import React from 'react';
 
 import DashboardComponent from './Dashboard.component';
 
-const Dashboard = () => {
+const Dashboard = ({ selectedMenu }) => {
   return (
-    <DashboardComponent />
+    <DashboardComponent selectedMenu={selectedMenu} />
   );
 };
 
